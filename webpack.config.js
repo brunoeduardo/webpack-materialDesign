@@ -1,11 +1,16 @@
 module.exports = [{
-  entry: './app/assets/styles/scss/app.scss',
-  output: {
-    // This is necessary for webpack to compile
-    // But we never use style-bundle.js
-    filename: 'style-bundle.js',
+  context: __dirname + '/app',
+  entry: {
+    bundle: './index.js',
+    bundleCss: './assets/styles/scss/app.scss'
   },
-  module: {
+  output: {
+    filename: '[name].js',
+    path: __dirname + '/app',
+    //filename: 'bundle.js',
+   // filename: 'style-bundle.js',
+  },
+   module: {
     rules: [
       {
         test: /\.scss$/,
@@ -22,5 +27,5 @@ module.exports = [{
         ]
       }
     ]
-  },
+  }
 }];

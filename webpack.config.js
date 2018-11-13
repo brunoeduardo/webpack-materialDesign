@@ -8,9 +8,9 @@ module.exports = [{
     filename: '[name].js',
     path: __dirname + '/app',
     //filename: 'bundle.js',
-   // filename: 'style-bundle.js',
+    // filename: 'style-bundle.js',
   },
-   module: {
+  module: {
     rules: [
       {
         test: /\.scss$/,
@@ -23,7 +23,12 @@ module.exports = [{
           },
           { loader: 'extract-loader' },
           { loader: 'css-loader' },
-          { loader: 'sass-loader' },
+          {
+            loader: 'sass-loader',
+            options: {
+              includePaths: ['./node_modules']
+            }
+          },
         ]
       }
     ]

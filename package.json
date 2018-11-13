@@ -16,6 +16,7 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/brueduardo/marvelproject#readme",
   "devDependencies": {
+    "@material/button": "^0.41.0",
     "css-loader": "^1.0.0",
     "extract-loader": "^3.0.0",
     "file-loader": "^2.0.0",
@@ -25,6 +26,8 @@
     "webpack-dev-server": "^2.11.3"
   },
   "dependencies": {
-    "angular": "^1.7.5"
+    "@material/ripple": "^0.41.0",
+    "angular": "^1.7.5",
+    "material-components-web": "^0.41.0"
   }
 }

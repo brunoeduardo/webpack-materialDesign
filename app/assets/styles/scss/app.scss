@@ -1,3 +1,6 @@
+//material design
+@import "@material/button/mdc-button";
+
 //config
 @import 'config/variables';
 @import 'config/reset';
@@ -5,4 +8,12 @@
 //template
 @import 'template/layout';
 @import 'template/header';
-@import 'template/footer'
+@import 'template/footer';
+
+
+.foo-button {
+    @include mdc-button-ink-color(teal);
+    @include mdc-states(teal);
+  }
+
+

@@ -1,0 +1,21 @@
+.mp-main-container {
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+};
+
+.mp-main-footer {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+};
+
+.mp-container {
+    display: flex;
+    justify-content: center;
+};
+
+.mp-content {
+    max-width: 1300px;
+    width: 100%;
+};

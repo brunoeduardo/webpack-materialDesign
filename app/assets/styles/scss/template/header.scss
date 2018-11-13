@@ -1,0 +1,33 @@
+.mp-header-container {
+    padding: 10px 0;
+    border-bottom: 2px solid $main-color;
+}
+.mp-header-content {
+    display: flex;
+}
+
+.mp-logo-container {
+    min-width: 200px;
+    width: 15%;
+}
+
+.mp-search-container {
+    padding: 0 10px;
+    text-align: center;
+    width: 55%;
+}
+.mp-menu-container {
+    padding: 0 10px;
+    width: 30%;
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 25px;
+    }
+
+    li a {
+        display: inline-block;
+        padding: 5px 15px;
+    }
+}

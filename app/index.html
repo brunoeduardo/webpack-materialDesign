@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="marvelApp">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Marvel</title>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
     <link rel="stylesheet" href="bundle.css">
 </head>
-<body ng-view>
-    <h1>TEST webpack</h1>
+
+<body>
+    <div class="mp-main-container">
+
+        <ng-include src="'pages/template/header.html'"></ng-include>
+
+        <div ng-view></div>
+
+        <ng-include class="mp-main-footer" src="'pages/template/footer.html'"></ng-include>
+    </div>
+
     <script src="bundle.js"></script>
 </body>
+
 </html>

@@ -26,7 +26,10 @@
     "webpack-dev-server": "^2.11.3"
   },
   "dependencies": {
+    "@material/card": "^0.41.0",
+    "@material/layout-grid": "^0.41.0",
     "@material/ripple": "^0.41.0",
+    "@material/textfield": "^0.41.0",
     "angular": "^1.7.5",
     "material-components-web": "^0.41.0"
   }

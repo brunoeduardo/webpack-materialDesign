@@ -12,22 +12,36 @@
 }
 
 .mp-search-container {
-    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    padding: 15px 10px 0;
     text-align: center;
-    width: 55%;
+    width: 60%;
 }
+
 .mp-menu-container {
     padding: 0 10px;
-    width: 30%;
+    width: 25%;
 
     ul {
         display: flex;
         justify-content: flex-end;
-        padding-top: 25px;
+        padding-top: 20px;
     }
 
     li a {
         display: inline-block;
+        font-size: 17px;
         padding: 5px 15px;
+
+        &:hover {
+            color: $main-color;
+        }
     }
+}
+
+.md-search-input {
+    max-width: 350px;
+    padding: 10px;
+    width: 100%;
 }

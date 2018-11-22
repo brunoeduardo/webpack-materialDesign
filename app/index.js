@@ -25,3 +25,5 @@ const buttonRipple = new MDCRipple(document.querySelector('.mdc-button'));
 
 import {MDCTextField} from '@material/textfield';
 const textField = new MDCTextField(document.querySelector('.mdc-text-field'));
+
+https://medium.com/@zamarrowski/angular-1-x-component-based-application-with-webpack-and-es6-dfab450f2df4

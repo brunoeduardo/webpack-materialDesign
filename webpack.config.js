@@ -1,7 +1,7 @@
 module.exports = [{
   context: __dirname + '/app',
   entry: {
-    bundle: './index.js',
+    bundle: './app.js',
     bundleCss: './assets/styles/scss/app.scss'
   },
   output: {
@@ -31,6 +31,18 @@ module.exports = [{
           },
         ]
       }
-    ]
+    ],
+  
+        loaders: [
+            {
+                test: /\.js$/,
+                loader: 'babel-loader',
+                exclude: /node_modules/,
+                query: {
+                    presets: ['es2015']
+                }
+            }
+        ]
+    
   }
 }];

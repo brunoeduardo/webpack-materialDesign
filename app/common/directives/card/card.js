@@ -12,15 +12,31 @@
 // });
 
 
-export default angular.module('card', [])
-    .directive('my-dir', MyDirDirective);
+// export default angular.module('card', [])
+//     .directive('my-dir', MyDirDirective);
 
-function MyDirDirective() {
-    return {
-        restrict: 'E',
-        scope: true,
-        bindToController: {},
-        controllerAs: '$ctrl',
-        templateUrl: 'card.html',
-    };
-}
+// function MyDirDirective() {
+//     return {
+//         restrict: 'E',
+//         scope: true,
+//         bindToController: {},
+//         controllerAs: '$ctrl',
+//         templateUrl: 'card.html',
+//     };
+// }
+
+
+export default function card() { 
+    alert("ok");
+    console.log(ok)
+    
+ }
+
+
+// export default angular
+//         .module('card.template',[])
+//         .directive('card-template', getCardTemplate);
+
+// function getCardTemplate() {
+//     /* implementation details */
+// }

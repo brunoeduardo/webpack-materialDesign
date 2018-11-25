@@ -10,10 +10,12 @@ import  './config/material';
 //controllers
 
 //directives
-import card from './common/directives/card/card.js';
+import directivesModules from './common/directives/directivesModule';
 
 
-const marvelModule = angular.module('marvelApp', [route])
-    .config(routes);
+const marvelModule = angular.module('marvelApp', [route, directivesModules])
+    .config(routes)
+
+
 
 

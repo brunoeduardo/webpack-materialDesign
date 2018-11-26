@@ -5,16 +5,18 @@ import route from 'angular-route';
 import routes from './config/app.route';
 
 //material design
-import  './config/material';
+import './config/material';
 
 //controllers
 
 //directives
-import directivesModules from './common/directives/directivesModule';
+import card from './common/directives/card/card'
+import search from './common/directives/search/search'
 
-
-const marvelModule = angular.module('marvelApp', [route, directivesModules])
+const marvelModule = angular.module('marvelApp', [route, card, search])
     .config(routes)
+    .name
+
 
 
 

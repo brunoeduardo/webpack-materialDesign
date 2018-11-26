@@ -1,42 +1,12 @@
-//export const helloWorld = 'Hello world from imported JS!';
+import angular from 'angular';
 
-//import marvelModule from './app';
+function card() {
+  return {
+    restrict: 'E',
+    templateUrl: './common/directives/card/card.html' 
+  }
+}
 
-// marvelModule.directive('card', function() {
-
-//   return {
-//         restrict: 'E',
-//         replace: true,
-//         templateUrl: 'card.html',
-//   };
-// });
-
-
-// export default angular.module('card', [])
-//     .directive('my-dir', MyDirDirective);
-
-// function MyDirDirective() {
-//     return {
-//         restrict: 'E',
-//         scope: true,
-//         bindToController: {},
-//         controllerAs: '$ctrl',
-//         templateUrl: 'card.html',
-//     };
-// }
-
-
-export default function card() { 
-    alert("ok");
-    console.log(ok)
-    
- }
-
-
-// export default angular
-//         .module('card.template',[])
-//         .directive('card-template', getCardTemplate);
-
-// function getCardTemplate() {
-//     /* implementation details */
-// }
+export default angular.module('directives.card', [])
+  .directive('card', card)
+  .name;

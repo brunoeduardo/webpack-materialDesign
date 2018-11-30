@@ -1,18 +1,8 @@
-.mp-search-container {
-    .mdc-text-field--outlined.mdc-text-field--dense {
-        margin-right: 10px;
-        max-width: 400px;
-        height: 38px;
-        width: 100%;
-    }
-
-    .mdc-text-field text-field .mdc-text-field--outlined {
-        padding: 10px;
-    }
-
-    .mdc-text-field--outlined.mdc-text-field--dense .mdc-floating-label {
-        bottom: 12px;
-    }
+.mp-body-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 10px;
+    width: 100%;
 }
 
 .mp-main-container {

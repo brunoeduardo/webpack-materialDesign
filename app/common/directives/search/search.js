@@ -1,5 +1,5 @@
 import angular from 'angular';
-
+import materialDesign from '../../../config/material';
 
 function search() {
   return {
@@ -8,6 +8,6 @@ function search() {
   }
 }
 
-export default angular.module('directives.search', [])
-  .directive('search', search)
+export default angular.module('directives.search', [materialDesign])
+  .directive('search',  search)
   .name;

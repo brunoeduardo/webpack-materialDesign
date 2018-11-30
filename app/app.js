@@ -5,7 +5,6 @@ import route from 'angular-route';
 import routes from './config/app.route';
 
 //material design
-import './config/material';
 
 //controllers
 

@@ -1,0 +1,36 @@
+
+.mp-search-container {
+    .mdc-text-field--outlined.mdc-text-field--dense {
+        margin-right: 10px;
+        max-width: 400px;
+        height: 38px;
+        width: 100%;
+    }
+
+    .mdc-text-field text-field .mdc-text-field--outlined {
+        padding: 10px;
+    }
+
+    .mdc-text-field--outlined.mdc-text-field--dense .mdc-floating-label {
+        bottom: 12px;
+    }
+}
+
+.mp-search {
+    text-align: center
+}
+
+.md-search-input {
+    max-width: 350px;
+    padding: 10px;
+    width: 100%;
+}
+
+
+.mp-search-container {
+    display: flex;
+    justify-content: center;
+    padding: 15px 10px 0;
+    text-align: center;
+    width: 100%;
+}

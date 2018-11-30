@@ -5,4 +5,20 @@
 //template
 @import 'template/layout';
 @import 'template/header';
-@import 'template/footer'
+@import 'template/footer';
+@import 'template/titles';
+
+//commons
+@import 'common/search';
+
+//material design
+@import 'materialDesign/card';
+
+//material design
+$mdc-theme-primary: $main-color;
+
+@import "@material/button/mdc-button";
+@import "@material/textfield/mdc-text-field";
+@import "@material/card/mdc-card";
+
+

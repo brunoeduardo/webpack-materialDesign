@@ -1,16 +1,16 @@
 module.exports = [{
   context: __dirname + '/app',
   entry: {
-    bundle: './index.js',
+    bundle: './app.js',
     bundleCss: './assets/styles/scss/app.scss'
   },
   output: {
     filename: '[name].js',
     path: __dirname + '/app',
     //filename: 'bundle.js',
-   // filename: 'style-bundle.js',
+    // filename: 'style-bundle.js',
   },
-   module: {
+  module: {
     rules: [
       {
         test: /\.scss$/,
@@ -23,9 +23,26 @@ module.exports = [{
           },
           { loader: 'extract-loader' },
           { loader: 'css-loader' },
-          { loader: 'sass-loader' },
+          {
+            loader: 'sass-loader',
+            options: {
+              includePaths: ['./node_modules']
+            }
+          },
         ]
       }
-    ]
+    ],
+  
+        loaders: [
+            {
+                test: /\.js$/,
+                loader: 'babel-loader',
+                exclude: /node_modules/,
+                query: {
+                    presets: ['es2015']
+                }
+            }
+        ]
+    
   }
 }];

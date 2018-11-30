@@ -11,23 +11,24 @@
     width: 15%;
 }
 
-.mp-search-container {
-    padding: 0 10px;
-    text-align: center;
-    width: 55%;
-}
 .mp-menu-container {
     padding: 0 10px;
-    width: 30%;
+    width: 25%;
 
     ul {
         display: flex;
         justify-content: flex-end;
-        padding-top: 25px;
+        padding-top: 20px;
     }
 
     li a {
         display: inline-block;
+        font-size: 17px;
         padding: 5px 15px;
+
+        &:hover {
+            color: $main-color;
+        }
     }
 }
+

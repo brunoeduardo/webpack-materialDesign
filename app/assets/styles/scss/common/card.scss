@@ -1,0 +1,29 @@
+.mdc-card {
+  margin:0 5px 15px;
+  max-width: 280px;
+  padding-bottom: 10px;
+  width: 100%;
+};
+
+.mdc-card__media {
+  background-image: url("https://www.tricurioso.com/wp-content/uploads/2018/07/planeta-terra.jpg");
+};
+
+.mdc-card__text {
+  padding: 10px;
+};
+
+.mdc-card__title {
+  color: $main-color;
+  font-size: 20px;
+  margin-bottom: 2px;
+};
+
+.mdc-card__subtitle {
+  color: $third-color;
+  font-size: 17px;
+};
+
+.mdc-card__description {
+  padding: 10px;
+};

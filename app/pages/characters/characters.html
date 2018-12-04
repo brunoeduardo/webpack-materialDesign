@@ -1,5 +1,13 @@
-<search></search>
+<div ng-controller="characters">
 
-<h1 class="mp-main-title">Characters</h1>
-
-<card></card>
+    <search></search>
+    
+    <h1 class="mp-main-title">Characters</h1>
+    
+    <section class="mp-card-container">
+        <card></card>
+    </section>
+    
+<button ng-click="openDetail()">AQUI</button>
+    <ng-include src="'../../../common/template/dialog.html'"> </ng-include>
+</div>

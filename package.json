@@ -33,6 +33,7 @@
     "@material/ripple": "^0.41.0",
     "@material/textfield": "^0.41.0",
     "angular": "^1.7.5",
+    "angular-resource": "^1.7.5",
     "angular-route": "^1.7.5",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.4",

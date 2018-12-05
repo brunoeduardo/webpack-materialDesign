@@ -1,13 +1,12 @@
 <div ng-controller="characters">
 
-    <search></search>
+    <search search-item="callSearch(param)"></search>
     
     <h1 class="mp-main-title">Characters</h1>
     
     <section class="mp-card-container">
-        <card></card>
+        <card ng-click="openDetail(objTitle, objText)" ng-repeat=""></card>
     </section>
-    
-<button ng-click="openDetail()">AQUI</button>
+
     <ng-include src="'../../../common/template/dialog.html'"> </ng-include>
 </div>

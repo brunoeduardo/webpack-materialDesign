@@ -4,7 +4,20 @@ import materialDesign from '../../../config/material';
 function search() {
   return {
     restrict: 'E',
-    templateUrl: './common/directives/search/search.html' 
+    templateUrl: './common/directives/search/search.html',
+    scope: {
+        searchItem: '&',
+    },
+    link: function (scope, element, attrs) {
+      scope.searchTxt = searchTxt;
+      console.log("Call111", scope);
+      function searchTxt() {
+        console.log("Call search");
+        scope.searchItem({param: scope.searchValue});
+
+      }
+      
+    }
   }
 }
 

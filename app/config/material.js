@@ -10,8 +10,6 @@ export default function materialDesign() {
             dialogElements = document.getElementsByClassName('mdc-dialog'),
             i;
 
-        console.log(dialogElements);
-
         for (i = 0; i < buttonsElements.length; i++) {
             mdc.ripple.MDCRipple.attachTo(buttonsElements[i]);
         };

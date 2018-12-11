@@ -1,23 +1,26 @@
 import angular from 'angular';
+import utils from '../provider/utils'
 
-function SearchService($resource, $promise, $http , $log, $q, $timeout) {
-    let vm = this,
+function searchService($log, utils) {
+    var vm = this ? this : {},
         hash = '74a5d628d3e86d97d2f3ebfbf02b2ebd',
         apikey = '47fbbb8ce97fc46360c96f01d5179835',
-        tsKeyHash = 'ts=1&apikey=' + apikey + '&hash=' + hash,
-        getInfo = $resource('http://gateway.marvel.com/v1/public/characters' + tsKeyHash);
+        tsKeyHash = '?ts=1&apikey=' + apikey + '&hash=' + hash,
+        getInfo = 'http://gateway.marvel.com/v1/public/characters';
 
-    $log.log("test");
+
+    vm.test = function (){
+        console.log("ok")
+    };
 
     vm.getSearchCharacter = function() {
         $log.info("Call service");
-        return getInfo.get().$promise.then(function(data) {
-            $log.log("data ==>", data);
-           
-          });
+        return utils.getHttpPromise(getInfo + tsKeyHash);
     };
 }
 
-export default angular.module('services.search-service', [])
-  .service('searchService',  SearchService)
-  .name;
+// export default angular.module('marvelApp.service', [])
+//   .service('searchService',  searchService)
+//   .name;
+
+export default searchService

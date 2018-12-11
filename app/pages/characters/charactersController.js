@@ -4,7 +4,7 @@ import { MDCDialog } from '@material/dialog';
 import searchService from '../../common/service/service'
 
 
-function characters($scope, searchService, $log) {
+function characters($scope, $log, searchService) {
     let dialog;
 
     $scope.openDetail = openDetail;
@@ -21,20 +21,22 @@ function characters($scope, searchService, $log) {
         };
         dialog.open();
     };
-
+    
     function callSearch (term) {
         console.log("Start search", term);
         //call api here
     };
 
-    $log.log(searchService);
-    // searchService.getSearchCharacter(data => {
-    //     //$log.log(data);
-    // });
+
+    searchService.getSearchCharacter().then(data => {
+        $log.log("Characters =>", data);
+        $scope.dataCharacters =  data.data.results;
+    });
+    
 }
 
-export default angular.module('controller.characters', [materialDesign, searchService])
-    .controller('characters', ['$scope', 'searchService', characters])
-    .name;
+// export default angular.module('controller.characters', [materialDesign, searchService])
+//     .controller('characters', characters)
+//     .name;
 
-
+export default characters

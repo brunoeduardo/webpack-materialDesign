@@ -25,5 +25,25 @@
 };
 
 .mdc-card__description {
+  height: 250px;
   padding: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100%; 
 };
+
+.card-item {
+  width: 100%;
+}
+
+@media (min-width: 500px) {
+  .card-item {
+    width: 50%;
+  } 
+}
+
+@media (min-width: 750px) {
+  .card-item {
+    width: 30%;
+  } 
+}

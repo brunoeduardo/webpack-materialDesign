@@ -5,7 +5,7 @@
     <h1 class="mp-main-title">Characters</h1>
     
     <section class="mp-card-container">
-        <card ng-click="openDetail(objTitle, objText)"></card>
+        <card class="card-item" ng-click="openDetail(objTitle, objText)" ng-repeat="character in dataCharacters"></card>
     </section>
 
     <ng-include src="'../../../common/template/dialog.html'"> </ng-include>

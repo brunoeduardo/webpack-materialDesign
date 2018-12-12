@@ -1,9 +1,12 @@
-<search></search>
+<div ng-controller="comics">
 
-<h1 class="mp-main-title">Comics</h1>
+    <h1 class="mp-main-title">Comics</h1>
 
-<section class="mp-card-container">
-    <card></card>
-</section>
+    <filter filter-item="callFilter(param)"></filter>
+
+    <section class="mp-card-container">
+        <card class="card-item" ng-click="openDetail(character.title, character.description)" ng-repeat="character in dataComics | filter:filterValue"></card>
+    </section>
 
 <ng-include src="'../../../common/template/dialog.html'"> </ng-include>
+</div>

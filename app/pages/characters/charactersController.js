@@ -8,11 +8,11 @@ function characters($scope, $log, searchService) {
     let dialog;
 
     $scope.openDetail = openDetail;
-    $scope.callSearch = callSearch;
+    $scope.callFilter = callFilter;
 
     setTimeout(function () {
         dialog = new MDCDialog(document.querySelector('.mdc-dialog'));
-    }, 1000);
+    }, 800);
     
     function openDetail(title, text) {
         $scope.dialogText = {
@@ -21,22 +21,15 @@ function characters($scope, $log, searchService) {
         };
         dialog.open();
     };
-    
-    function callSearch (term) {
-        console.log("Start search", term);
-        //call api here
+
+    function callFilter(term) {
+        $scope.filterValue = term;
     };
 
-
-    searchService.getSearchCharacter().then(data => {
-        $log.log("Characters =>", data);
+    searchService.getSearch('characters').then(data => {
         $scope.dataCharacters =  data.data.results;
     });
     
 }
-
-// export default angular.module('controller.characters', [materialDesign, searchService])
-//     .controller('characters', characters)
-//     .name;
 
 export default characters

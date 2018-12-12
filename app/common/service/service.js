@@ -5,22 +5,15 @@ function searchService($log, utils) {
     var vm = this ? this : {},
         hash = '74a5d628d3e86d97d2f3ebfbf02b2ebd',
         apikey = '47fbbb8ce97fc46360c96f01d5179835',
-        tsKeyHash = '?ts=1&apikey=' + apikey + '&hash=' + hash,
-        getInfo = 'http://gateway.marvel.com/v1/public/characters';
+        tsKeyHash = '?ts=1&apikey=' + apikey + '&hash=' + hash;
 
 
-    vm.test = function (){
-        console.log("ok")
-    };
-
-    vm.getSearchCharacter = function() {
+    vm.getSearch = function(paramUrl) {
         $log.info("Call service");
-        return utils.getHttpPromise(getInfo + tsKeyHash);
+        let getInfo = 'http://gateway.marvel.com/v1/public/';
+        return utils.getHttpPromise(getInfo + paramUrl + tsKeyHash);
     };
 }
 
-// export default angular.module('marvelApp.service', [])
-//   .service('searchService',  searchService)
-//   .name;
 
 export default searchService

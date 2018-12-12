@@ -1,11 +1,11 @@
 <div ng-controller="characters">
-
-    <search search-item="callSearch(param)"></search>
     
     <h1 class="mp-main-title">Characters</h1>
-    
-    <section class="mp-card-container">
-        <card class="card-item" ng-click="openDetail(objTitle, objText)" ng-repeat="character in dataCharacters"></card>
+
+    <filter filter-item="callFilter(param)"></filter>
+
+    <section class="mp-card-container">    
+        <card class="card-item" ng-click="openDetail(character.name, character.description)" ng-repeat="character in dataCharacters | filter:filterValue"></card>
     </section>
 
     <ng-include src="'../../../common/template/dialog.html'"> </ng-include>

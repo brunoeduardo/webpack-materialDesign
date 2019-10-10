@@ -23,7 +23,7 @@
     "node-sass": "^4.9.4",
     "sass-loader": "^7.1.0",
     "webpack": "^3.12.0",
-    "webpack-dev-server": "^2.11.3"
+    "webpack-dev-server": "^2.11.5"
   },
   "dependencies": {
     "@material/auto-init": "^0.41.0",

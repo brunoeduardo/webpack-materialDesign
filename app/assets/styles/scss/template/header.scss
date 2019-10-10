@@ -1,0 +1,48 @@
+.mp-header-container {
+    padding: 10px;
+    border-bottom: 2px solid $main-color;
+}
+
+.mp-logo-container {
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+.mp-menu-container {
+    padding: 0 10px;
+    
+    ul {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    li a {
+        display: inline-block;
+        font-size: 17px;
+        padding: 5px 15px;
+
+        &:hover {
+            color: $main-color;
+        }
+    }
+}
+
+@media (min-width: 540px) {
+    .mp-header-content {
+        display: flex;
+     };
+
+     .mp-menu-container {
+        width: 25%;
+        
+        ul {
+            justify-content: flex-end;
+        }
+    }
+
+    .mp-logo-container {
+        min-width: 200px;
+        width: 15%;
+    }
+}

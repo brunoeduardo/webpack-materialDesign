@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="marvelApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Marvel</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans">
+    <link rel="stylesheet" href="bundle.css">
+</head>
+
+<body>
+    <div class="mp-main-container">
+        <header class="mp-container mp-header-container">
+            <div class="mp-content mp-header-content">
+                <div class="mp-logo-container">
+                    <img src="./assets/images/marvel-logo.svg" alt="Logo Marvel">
+                </div>
+                <div class="mp-search-container">
+                        <!-- <div class="mdc-text-field text-field mdc-text-field--outlined mdc-text-field--dense">
+                                <input type="text" id="text-field--outlined" class="mdc-text-field__input md-search-input">
+                                <label class="mdc-floating-label" for="text-field--outlined">O que procura?</label>
+                                <div class="mdc-notched-outline"><svg>
+                                        <path class="mdc-notched-outline__path"></path>
+                                    </svg></div>
+                                <div class="mdc-notched-outline__idle"></div>
+                            </div>
+                            <button class="mdc-button mdc-ripple-surface mdc-ripple-surface--primary mdc-button--raised" type="submit">Buscar</button> -->
+                </div>
+                <nav class="mp-menu-container">
+                    <ul>
+                        <li>
+                            <a href="/">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!characters">
+                                Characters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!comics">
+                                Comics
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div ng-view class="mp-body-container">
+
+        </div>
+
+        <footer class="mp-main-footer" src="'template/footer.html'">
+            <div class="mp-footer">
+                Made by Bruno Eduardo
+            </div>
+        </footer>
+    </div>
+    <script src="bundle.js"></script>
+</body>
+
+</html>

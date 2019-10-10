@@ -1,0 +1,44 @@
+.mdc-card {
+  margin:0 5px 15px;
+  padding-bottom: 10px;
+  width: 100%;
+};
+
+.mdc-card__text {
+  padding: 10px;
+};
+
+.mdc-card__title {
+  color: $main-color;
+  font-size: 20px;
+  height: 70px;
+  margin-bottom: 2px;
+};
+
+.mdc-card__subtitle {
+  color: $third-color;
+  font-size: 17px;
+};
+
+.mdc-card__description {
+  height: 250px;
+  padding: 10px;
+  width: 100%; 
+};
+
+.card-item {
+  margin: 0 5px;
+  width: 100%;
+}
+
+@media (min-width: 550px) {
+  .card-item {
+    width: 48%;
+  } 
+}
+
+@media (min-width: 785px) {
+  .card-item {
+    width: 32%;
+  } 
+}

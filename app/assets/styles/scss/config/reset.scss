@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    color: $font-color;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        color: $main-color;
+    }
+    &:hover {
+        color: $black;
+    }
+}
+
+html, body {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    height: 100%;
+}

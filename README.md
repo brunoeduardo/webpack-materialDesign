@@ -1,6 +1,6 @@
-**AngularJS study project**
+**Study project**
 
-This is a AngularJS project with the MArvel API. The project objective is only to study and to apply AngularJS techniques.
+This is a project with the Marvel API. The project objective is to study the integration with AngularJS, Webpack and Material Design techniques.
 
 ---
 
@@ -9,3 +9,4 @@ This is a AngularJS project with the MArvel API. The project objective is only t
 - AngularJS
 - SASS
 - Webpack
+- Material Design
